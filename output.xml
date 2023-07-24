@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230712 13:10:03.269" rpa="false" schemaversion="3">
+<suite id="s1" name="6210210299-Lab7" source="D:\Software Testing\6210210299-lab7.robot">
+<test id="s1-t1" name="1. Open Google Website" line="36">
+<kw name="Open codenboxautomationlab">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230712 13:10:03.847" level="INFO">Opening browser 'chrome' to base url 'https://codenboxautomationlab.com/practice/'.</msg>
+<status status="PASS" starttime="20230712 13:10:03.846" endtime="20230712 13:10:14.494"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:03.846" endtime="20230712 13:10:14.495"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:03.845" endtime="20230712 13:10:14.496"/>
+</test>
+<test id="s1-t2" name="2. Radio Button Example" line="39">
+<kw name="ClickRadio2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@value='radio2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 13:10:14.505" level="INFO">Clicking element 'xpath=//input[@value='radio2']'.</msg>
+<status status="PASS" starttime="20230712 13:10:14.502" endtime="20230712 13:10:14.742"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:14.502" endtime="20230712 13:10:14.742"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:14.498" endtime="20230712 13:10:14.742"/>
+</test>
+<test id="s1-t3" name="3. Dynamic Dropdown Example" line="42">
+<kw name="InputCountry">
+<arg>Thai</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=autocomplete</arg>
+<arg>${country}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230712 13:10:14.752" level="INFO">Typing text 'Thai' into text field 'id=autocomplete'.</msg>
+<status status="PASS" starttime="20230712 13:10:14.750" endtime="20230712 13:10:15.845"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[contains(@class, 'ui-menu-item') and contains(text(), 'Thailand')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230712 13:10:15.846" endtime="20230712 13:10:16.730"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[contains(@class, 'ui-menu-item') and contains(text(), 'Thailand')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 13:10:16.730" level="INFO">Clicking element 'xpath=//*[contains(@class, 'ui-menu-item') and contains(text(), 'Thailand')]'.</msg>
+<status status="PASS" starttime="20230712 13:10:16.730" endtime="20230712 13:10:16.802"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:14.748" endtime="20230712 13:10:16.802"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:14.742" endtime="20230712 13:10:16.802"/>
+</test>
+<test id="s1-t4" name="4. Static Dropdown Example" line="45">
+<kw name="Static Dropdown Example">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230712 13:10:19.805" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230712 13:10:16.804" endtime="20230712 13:10:19.805"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>//select[@id='dropdown-class-example']</arg>
+<arg>API</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230712 13:10:19.805" level="INFO">Selecting options from selection list '//select[@id='dropdown-class-example']' by label API.</msg>
+<status status="PASS" starttime="20230712 13:10:19.805" endtime="20230712 13:10:19.966"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:16.802" endtime="20230712 13:10:19.967"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:16.802" endtime="20230712 13:10:19.967"/>
+</test>
+<test id="s1-t5" name="5. Select Checkbox" line="48">
+<kw name="Select Checkbox">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230712 13:10:22.972" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230712 13:10:19.971" endtime="20230712 13:10:22.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@value='option1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 13:10:22.972" level="INFO">Clicking element 'xpath=//input[@value='option1']'.</msg>
+<status status="PASS" starttime="20230712 13:10:22.972" endtime="20230712 13:10:23.078"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//input[@value='option3']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230712 13:10:23.080" level="INFO">Clicking element 'xpath=//input[@value='option3']'.</msg>
+<status status="PASS" starttime="20230712 13:10:23.078" endtime="20230712 13:10:23.177"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:19.970" endtime="20230712 13:10:23.177"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:19.969" endtime="20230712 13:10:23.177"/>
+</test>
+<test id="s1-t6" name="6. Mouse Hover Example" line="51">
+<kw name="Mouse Hover">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230712 13:10:26.186" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230712 13:10:23.184" endtime="20230712 13:10:26.186"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//button[text()='Mouse Hover']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230712 13:10:26.186" level="INFO">Simulating Mouse Over on element 'xpath=//button[text()='Mouse Hover']'.</msg>
+<status status="PASS" starttime="20230712 13:10:26.186" endtime="20230712 13:10:27.135"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:23.184" endtime="20230712 13:10:27.135"/>
+</kw>
+<status status="PASS" starttime="20230712 13:10:23.177" endtime="20230712 13:10:27.136"/>
+</test>
+<status status="PASS" starttime="20230712 13:10:03.269" endtime="20230712 13:10:27.137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="6210210299-Lab7">6210210299-Lab7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
